@@ -8,11 +8,11 @@ import {
 
 function SummaryCountBar() {
   return (
-    <div className="grow p-[24px]">
+    <div className="grow p-[24px] dark:text-white">
       <h5 className="font-semibold text-lg mb-[24px]">Dashboard</h5>
       <div className="flex flex-row gap-x-[10px]">
-        <div className="group flex-auto drop-shadow-[0_0.8px_2px_rgba(211,211,211,0.8)] text-center">
-          <div className="p-[20px] bg-white rounded-lg group-hover:bg-custom-blue group-hover:text-white transition-all duration-300 cursor-pointer">
+        <div className="group flex-auto drop-shadow-[0_0.8px_2px_rgba(211,211,211,0.8)] text-center dark:text-white">
+          <div className="p-[20px] bg-white dark:bg-dark-card-bg rounded-lg group-hover:bg-custom-blue group-hover:text-white transition-all duration-300 cursor-pointer">
             <div className="flex items-center justify-center">
               <div className="bg-custom-blue mb-[20px] w-[50px] h-[50px] flex items-center justify-center rounded-md text-white">
                 <FontAwesomeIcon
@@ -27,8 +27,8 @@ function SummaryCountBar() {
             </h5>
           </div>
         </div>
-        <div className="group flex-auto drop-shadow-[0_0.8px_2px_rgba(211,211,211,0.8)] text-center">
-          <div className="p-[20px] bg-white rounded-lg group-hover:bg-custom-blue group-hover:text-white transition-all duration-300 cursor-pointer">
+        <div className="group flex-auto drop-shadow-[0_0.8px_2px_rgba(211,211,211,0.8)] text-center dark:text-white">
+          <div className="p-[20px] bg-white dark:bg-dark-card-bg rounded-lg group-hover:bg-custom-blue group-hover:text-white transition-all duration-300 cursor-pointer">
             <div className="flex items-center justify-center">
               <div className="bg-custom-blue mb-[20px] w-[50px] h-[50px] flex items-center justify-center rounded-md text-white">
                 <FontAwesomeIcon
@@ -43,8 +43,8 @@ function SummaryCountBar() {
             </h5>
           </div>
         </div>
-        <div className="group flex-auto drop-shadow-[0_0.8px_2px_rgba(211,211,211,0.8)] text-center">
-          <div className="p-[20px] bg-white rounded-lg group-hover:bg-custom-blue group-hover:text-white transition-all duration-300 cursor-pointer">
+        <div className="group flex-auto drop-shadow-[0_0.8px_2px_rgba(211,211,211,0.8)] text-center dark:text-white">
+          <div className="p-[20px] bg-white dark:bg-dark-card-bg rounded-lg group-hover:bg-custom-blue group-hover:text-white transition-all duration-300 cursor-pointer">
             <div className="flex items-center justify-center">
               <div className="bg-custom-blue mb-[20px] w-[50px] h-[50px] flex items-center justify-center rounded-md text-white">
                 <FontAwesomeIcon
@@ -59,8 +59,8 @@ function SummaryCountBar() {
             </h5>
           </div>
         </div>
-        <div className="group flex-auto drop-shadow-[0_0.8px_2px_rgba(211,211,211,0.8)] text-center">
-          <div className="p-[20px] bg-white rounded-lg group-hover:bg-custom-blue group-hover:text-white transition-all duration-300 cursor-pointer">
+        <div className="group flex-auto drop-shadow-[0_0.8px_2px_rgba(211,211,211,0.8)] text-center dark:text-white">
+          <div className="p-[20px] bg-white dark:bg-dark-card-bg rounded-lg group-hover:bg-custom-blue group-hover:text-white transition-all duration-300 cursor-pointer">
             <div className="flex items-center justify-center">
               <div className="bg-custom-blue mb-[20px] w-[50px] h-[50px] flex items-center justify-center rounded-md text-white">
                 <FontAwesomeIcon

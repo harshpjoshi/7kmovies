@@ -54,7 +54,7 @@ function YearlyBreakup() {
   };
 
   return (
-    <div className="flex flex-col py-[20px] pl-[20px] drop-shadow-[0_0.8px_2px_rgba(211,211,211,0.8)] bg-white rounded-lg">
+    <div className="flex flex-col py-[20px] pl-[20px] drop-shadow-[0_0.8px_2px_rgba(211,211,211,0.8)] bg-white dark:bg-dark-card-bg dark:text-white rounded-lg">
       <h5 className="font-semibold text-lg mb-[24px]">Yearly Breakup</h5>
       <div className="flex flex-row justify-between">
         <div className="flex">

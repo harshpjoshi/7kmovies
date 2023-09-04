@@ -50,7 +50,7 @@ function MonthlyEarning() {
   };
 
   return (
-    <div className="flex flex-col drop-shadow-[0_0.8px_2px_rgba(211,211,211,0.8)] bg-white rounded-lg mt-7">
+    <div className="flex flex-col drop-shadow-[0_0.8px_2px_rgba(211,211,211,0.8)] bg-white dark:bg-dark-card-bg dark:text-white rounded-lg mt-7">
       <h5 className="font-semibold text-lg mb-[24px] pt-[20px] pl-[20px]">
         Monthly Earning
       </h5>
