@@ -5,18 +5,35 @@ import SummaryCountBar from "./ui/SummaryCountBar";
 import SalesOverview from "./ui/SalesOverview";
 import YearlyBreakup from "./ui/YearlyBreakup";
 import MonthlyEarning from "./ui/MonthlyEarning";
+import { useEffect, useState } from "react";
+import { useMediaQuery } from "react-responsive";
 
 function App() {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+  const isTabletOrMobile = useMediaQuery({ query: "(max-width: 1000px)" });
+
+  useEffect(
+    function () {
+      console.log("Updated");
+      setIsNavOpen(false);
+    },
+    [isTabletOrMobile],
+  );
+
+  function handleNavOpen() {
+    setIsNavOpen((state) => !state);
+  }
+
   return (
     <div className="p-4 h-screen flex flex-col">
-      <TopNavBar />
-      <div className="flex flex-row">
-        <SideBar />
+      <TopNavBar onNavOpen={handleNavOpen} />
+      <div className="static flex flex-row">
+        <SideBar isNavOpen={isNavOpen} />
         <div className="flex flex-col w-full">
           <SummaryCountBar />
-          <div className="flex flex-row w-full p-[24px]">
+          <div className="md:flex md:flex-row w-full md:p-[24px] mt-8">
             <SalesOverview />
-            <div className="basis-[30%] ml-[20px]">
+            <div className="basis-[30%] md:ml-[20px] max-[700px]:my-[24px]">
               <YearlyBreakup />
               <MonthlyEarning />
             </div>

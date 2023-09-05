@@ -8,9 +8,9 @@ import {
 
 function SummaryCountBar() {
   return (
-    <div className="grow p-[24px] dark:text-white">
+    <div className="grow md:p-[24px] pt-8 dark:text-white">
       <h5 className="font-semibold text-lg mb-[24px]">Dashboard</h5>
-      <div className="flex flex-row gap-x-[10px]">
+      <div className="grid grid-rows-2 grid-flow-col gap-y-[10px] md:flex md:flex-row gap-x-[10px]">
         <div className="group flex-auto dark:rounded-lg dark:border dark:border-solid dark:border-gray-600/70  dark:drop-shadow-none drop-shadow-[0_0.8px_2px_rgba(211,211,211,0.8)] text-center dark:text-white">
           <div className="p-[20px] bg-white dark:bg-dark-card-bg rounded-lg group-hover:bg-custom-blue group-hover:text-white transition-all duration-300 cursor-pointer">
             <div className="flex items-center justify-center">

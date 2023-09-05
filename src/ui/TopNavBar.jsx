@@ -1,13 +1,9 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faAslInterpreting,
-  faMoon,
-  faSun,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBars, faMoon, faSun } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 
-function TopNavBar() {
-  const [isDarkTheme, setIsDarkTheme] = useState(localStorage.theme);
+function TopNavBar({ onNavOpen }) {
+  const [isDarkTheme, setIsDarkTheme] = useState(false);
 
   function handleTheme() {
     const isDark =
@@ -33,7 +29,12 @@ function TopNavBar() {
   return (
     <div className="flex justify-between dark:border dark:border-solid dark:border-gray-600/70  dark:drop-shadow-none drop-shadow-[0_0.5px_4px_rgba(211,211,211,0.8)] bg-white dark:bg-dark-card-bg rounded-lg">
       <div className="flex justify-self-center items-center">
-        <img src="/logos/dark-logo.svg" width="160" className="ml-6" />
+        <FontAwesomeIcon
+          icon={faBars}
+          className="dark:text-white w-[14px] h-[14px] ml-6 xl:hidden"
+          onClick={onNavOpen}
+        />
+        <img src="/logos/dark-logo.svg" width="160" className="ml-4 xl:ml-6" />
       </div>
       <div className="flex justify-between w-[120px] h-16 mr-6">
         <div

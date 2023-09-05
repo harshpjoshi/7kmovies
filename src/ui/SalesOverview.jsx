@@ -15,7 +15,6 @@ function SalesOverview() {
     options: {
       chart: {
         type: "bar",
-        height: 345,
         offsetX: -15,
         toolbar: { show: true },
         foreColor: "#adb0bb",
@@ -84,14 +83,50 @@ function SalesOverview() {
         colors: ["transparent"],
       },
 
-      tooltip: { theme: "light" },
+      tooltip: { theme: "dark" },
       responsive: [
         {
           breakpoint: 600,
           options: {
+            chart: {
+              type: "bar",
+              offsetX: -15,
+              height: 400,
+              toolbar: { show: true },
+              foreColor: "#adb0bb",
+              fontFamily: "inherit",
+              sparkline: { enabled: false },
+            },
             plotOptions: {
               bar: {
-                borderRadius: 100,
+                horizontal: false,
+                columnWidth: "44%",
+                borderRadius: [2],
+                borderRadiusApplication: "end",
+                borderRadiusWhenStacked: "all",
+              },
+            },
+          },
+        },
+        {
+          breakpoint: 500,
+          options: {
+            chart: {
+              type: "bar",
+              offsetX: -15,
+              height: 400,
+              toolbar: { show: true },
+              foreColor: "#adb0bb",
+              fontFamily: "inherit",
+              sparkline: { enabled: false },
+            },
+            plotOptions: {
+              bar: {
+                horizontal: false,
+                columnWidth: "44%",
+                borderRadius: [2],
+                borderRadiusApplication: "end",
+                borderRadiusWhenStacked: "all",
               },
             },
           },
@@ -100,14 +135,14 @@ function SalesOverview() {
     },
   };
   return (
-    <div className="h-full basis-[70%] p-[30px] dark:rounded-lg dark:border dark:border-solid dark:border-gray-600/70  dark:drop-shadow-none drop-shadow-[0_0.8px_2px_rgba(211,211,211,0.8)] bg-white dark:text-white dark:bg-dark-card-bg rounded-lg">
+    <div className="md:h-full basis-[70%] p-[30px] dark:rounded-lg dark:border dark:border-solid dark:border-gray-600/70  dark:drop-shadow-none drop-shadow-[0_0.8px_2px_rgba(211,211,211,0.8)] bg-white dark:text-white dark:bg-dark-card-bg rounded-lg">
       <div className="flex flex-col">
         <h5 className="font-semibold text-lg mb-[24px]">Sales Overview</h5>
         <ReactApexChart
           options={chart.options}
           series={chart.series}
           type="bar"
-          height={345}
+          className="md:h-[345px] h-[0px]"
         />
       </div>
     </div>
