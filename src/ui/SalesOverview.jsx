@@ -100,7 +100,7 @@ function SalesOverview() {
     },
   };
   return (
-    <div className="h-full basis-[70%] p-[30px] drop-shadow-[0_0.8px_2px_rgba(211,211,211,0.8)] bg-white dark:text-white dark:bg-dark-card-bg rounded-lg">
+    <div className="h-full basis-[70%] p-[30px] dark:rounded-lg dark:border dark:border-solid dark:border-gray-600/70  dark:drop-shadow-none drop-shadow-[0_0.8px_2px_rgba(211,211,211,0.8)] bg-white dark:text-white dark:bg-dark-card-bg rounded-lg">
       <div className="flex flex-col">
         <h5 className="font-semibold text-lg mb-[24px]">Sales Overview</h5>
         <ReactApexChart

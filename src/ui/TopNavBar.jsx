@@ -31,7 +31,7 @@ function TopNavBar() {
   }
 
   return (
-    <div className="flex justify-between  drop-shadow-[0_0.5px_4px_rgba(211,211,211,0.8)] bg-white dark:bg-dark-card-bg rounded-lg">
+    <div className="flex justify-between dark:border dark:border-solid dark:border-gray-600/70  dark:drop-shadow-none drop-shadow-[0_0.5px_4px_rgba(211,211,211,0.8)] bg-white dark:bg-dark-card-bg rounded-lg">
       <div className="flex justify-self-center items-center">
         <img src="/logos/dark-logo.svg" width="160" className="ml-6" />
       </div>
@@ -42,7 +42,9 @@ function TopNavBar() {
         >
           <FontAwesomeIcon
             icon={isDarkTheme ? faSun : faMoon}
-            className=" w-[10.5px] h-[14px] "
+            className={`${
+              isDarkTheme ? "w-[14px] h-[14px]" : "w-[10.5px] h-[14px]"
+            }`}
           />
         </div>
         <img
